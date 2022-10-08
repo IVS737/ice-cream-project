@@ -1,5 +1,9 @@
 @import './common';
-@import './example';
+
+@import './base/base';
+@import './base/containers';
+
+
 @import './header';
 @import './products.scss';
 @import './about.scss';
