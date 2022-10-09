@@ -1,0 +1,161 @@
+.about {
+    background-color: #84A178;
+    color: #FCFCFC;      
+}
+.about__title {
+    padding-top: 12px;
+    padding-bottom: 54px;
+    font-family: 'Seymour One';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.27;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+.about__label {
+    padding-top: 60px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.22;
+    text-align: center;
+    text-transform: uppercase;
+}
+@media screen and (max-width: 480px) {
+    .about__description_mobile {
+    display: none;
+    }
+}
+.about__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 162%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    &::before {
+        content: "";
+        border: 0px;
+        border-radius: 50%;
+        display: inline-block;
+        align-self: center;
+        background-size: cover;
+        background-position: center;
+    }
+}
+.about__description {
+    display: flex;
+    flex-direction: column;
+    gap: 3.83px;
+    justify-content: center;
+}
+@media screen and (max-width: 767px){
+    
+    .about__content::before {
+        width: 279px;
+        height: 279px;
+        margin-bottom: 40px;
+        box-shadow: 0 -21.82 0 0 #F8D24E;
+        background-image: url(../images/about/cowmobile.jpg);  
+        @media
+            screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+            background-image: url(../images/about/cowmobile@2x.jpg);
+        }
+    }
+    .about__button {
+        width: 164px;
+        height: 42px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .about__title {
+        padding-left: auto;
+        padding-right: auto;
+        padding-bottom: 79px;
+        font-size: 34px;
+        line-height: 1.26;
+        letter-spacing: 0.06em;
+    }
+    .about__label {
+        font-size: 22px;
+        line-height: 1.23;
+    }
+    .about__description {
+        width: 336px;
+        gap: 8px;
+        text-align: left;
+        margin-left: 32px;   
+    }
+    .about__button {
+        width: 164px;
+        height: 42px;
+        margin-top: 48px;
+    }
+    .about__content {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        line-height: 176%;
+        padding: 0px;
+    }
+    .about__content::before {
+        width: 330px;
+        height: 330px;
+        margin-bottom: 0;
+        box-shadow: 0 -25.88 0 0 #F8D24E;
+        background-image: url(../images/about/cowtablet.jpg);
+        @media
+            screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+            background-image: url(../images/about/cowtablet@2x.jpg);
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+    .about__title {
+        padding-bottom: 121px;
+        font-size: 36px;
+    }
+    .about__label {
+        font-size: 30px;
+    }
+    .about__description {
+        width: 463px;
+        margin-left: 100px;   
+    }
+    .about__content {
+        font-size: 14px;
+        line-height: 194%;
+    }
+    
+    .about__content::before {
+        width: 490px;
+        height: 490px;
+        box-shadow: 0 -39 0 0 #F8D24E;
+        background-image: url(../images/about/cowdesktop.jpg);
+        @media
+            screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+            background-image: url(../images/about/cowdesktop@2x.jpg);
+        }
+    }
+}
+
+
+
+
