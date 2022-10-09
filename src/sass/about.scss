@@ -71,12 +71,12 @@
         height: 279px;
         margin-bottom: 40px;
         box-shadow: 0 -21.82 0 0 #F8D24E;
-        background-image: url(../images/cow-mobile.jpg);
+        background-image: url(../images/about/cow-mobile.jpg);
 
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
-            background-image: url(../images/cow-mobile2x.jpg);
+            background-image: url(../images/about/cow-mobile2x.jpg);
         }
     }
 
@@ -130,12 +130,12 @@
         height: 330px;
         margin-bottom: 0;
         box-shadow: 0 -25.88 0 0 #F8D24E;
-        background-image: url(../images/cow-tablet.jpg);
+        background-image: url(../images/about/cow-tablet.jpg);
 
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
-            background-image: url(../images/cow-tablet2x.jpg);
+            background-image: url(../images/about/cow-tablet2x.jpg);
         }
     }
 }
@@ -164,18 +164,12 @@
         width: 490px;
         height: 490px;
         box-shadow: 0 -39 0 0 #F8D24E;
-        background-image: url(../images/cow-mobile.jpg);
+        background-image: url(../images/about/cow-desktop.jpg);
 
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
-            background-image: url(../images/cow-desktop2x.jpg);
+            background-image: url(../images/about/cow-desktop2x.jpg);
         }
     }
-}
-
-.test-svg {
-    width: 12px;
-    height: 12px;
-    color: #F8D24E;
 }
