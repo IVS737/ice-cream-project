@@ -1,0 +1,73 @@
+<header class="page-header">
+    <div class="container main-menu">
+        <nav class="nav-menu">
+            <picture>
+                <source srcset="./images/header/logo.webp 1x, ./images/header/logo@2x.webp 2x" media="(min-width: 1200px)"
+                    type="image/webp" />
+                <source srcset="./images/header/logo.png 1x, ./images/header/logo@2x.png 2x" media="(min-width: 1200px)" />
+            
+                <source srcset="./images/header/logo-tablet.webp 1x, ./images/header/logo-tablet@2x.webp 2x" media="(min-width: 768px)"
+                    type="image/webp" />
+                <source srcset="./images/header/logo-tablet.png 1x, ./images/header/logo-tablet@2x.png 2x" media="(min-width: 768px)" />
+            
+                <source srcset="./images/header/logo-mobile.webp 1x, ./images/header/logo-mobile@2x.webp 2x" media="(max-width: 767px)"
+                    type="image/webp" />
+                <source srcset="./images/header/logo-mobile.png 1x, ./images/header/logo-mobile@2x.png 2x" media="(max-width: 767px)" />
+            
+                <img src="./images/header/logo-mobile.png" alt="Логотип морозива">
+            </picture>
+
+            <ul class="list nav-menu__list">
+                <li class="nav-menu__item"><a href="#" class="link nav-menu__link">Home</a></li>
+                <li class="nav-menu__item"><a href="#" class="link nav-menu__link">How it’s made?</a></li>
+                <li class="nav-menu__item"><a href="#" class="link nav-menu__link">Our products</a></li>
+                <li class="nav-menu__item"><a href="#" class="link nav-menu__link">Contact</a></li>
+            </ul>
+        </nav>
+        <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="open-menu-btn__icon" width="32" height="32">
+                <use href="./images/header-icons.svg#icon-burger"></use>
+            </svg>
+        </button>
+        <button type="button" class="buy-btn">Buy now
+            <svg lang="en" aria-label="arrow icon" class="buy-btn__icon" width="12" height="12">
+                <use href="./images/header-icons.svg#icon-arrow-btn "></use>
+            </svg>
+        </button>
+    </div>
+
+    <!-- mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <picture class="menu-logo">
+            <source srcset="./images/header/logo-tablet.webp 1x, ./images/header/logo-tablet@2x.webp 2x"
+                media="(min-width: 768px)" type="image/webp" />
+            <source srcset="./images/header/logo-tablet.png 1x, ./images/header/logo-tablet@2x.png 2x"
+                media="(min-width: 768px)" />
+        
+            <source srcset="./images/header/logo-mobile.webp 1x, ./images/header/logo-mobile@2x.webp 2x"
+                media="(max-width: 767px)" type="image/webp" />
+            <source srcset="./images/header/logo-mobile.png 1x, ./images/header/logo-mobile@2x.png 2x"
+                media="(max-width: 767px)" />
+        
+            <img src="./images/header/logo-mobile.png" alt="Логотип морозива">
+        </picture>
+        <button class="menu-toggle js-close-menu">
+            <svg width="32" height="32">
+                <use href="./images/header-icons.svg#icon-close-btn"></use>
+            </svg>
+        </button>
+        <nav >
+            <ul class="list mobile-menu__list">
+                <li class="mobile-menu__item"><a href="#" class="link mobile-menu__link">Home</a></li>
+                <li class="mobile-menu__item"><a href="#" class="link mobile-menu__link">How it’s made?</a></li>
+                <li class="mobile-menu__item"><a href="#" class="link mobile-menu__link">Our products</a></li>
+                <li class="mobile-menu__item"><a href="#" class="link mobile-menu__link">Contact</a></li>
+            </ul>
+        </nav>
+        <button type="button" class="mobile-buy-btn">Buy now
+            <svg lang="en" aria-label="arrow icon" class="buy-btn__icon" width="12" height="12">
+                <use href="./images/header-icons.svg#icon-arrow-btn "></use>
+            </svg>
+        </button>
+    </div>
+</header>
