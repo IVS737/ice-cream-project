@@ -9,9 +9,6 @@
   }
 }
 
-//
-//           ОСНОВНОЙ ТЕКСТ
-//
 .advantages__tit {
   font-family: 'Roboto';
   font-style: normal;
@@ -35,9 +32,6 @@
   color: #fcfcfc;
 }
 
-//
-//           ОБЩИЕ СТИЛИ
-//
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -54,8 +48,6 @@
 .advantages {
   display: flex;
   background-color: #84a178;
-  padding-left: 45px;
-  padding-right: 45px;
   padding-top: 40px;
   padding-bottom: 60px;
 }
@@ -63,9 +55,7 @@
 .icon-advantages {
   margin-bottom: 16px;
 }
-//
-//          ИКОНКИ
-//
+
 .advantages__cow::before {
   content: '';
   width: 50px;
@@ -90,22 +80,11 @@
   display: flex;
 }
 
-//
-//           МЕДИА ПРАВИЛА
-//
-
 @media screen and (min-width: 480px) {
-  //          ПОЗИЦИОНИРОВАНИЕ
 }
 
 @media screen and (min-width: 768px) {
-  //          ПОЗИЦИОНИРОВАНИЕ
   .advantages {
-    .container {
-      padding-left: 76px;
-      padding-right: 76px;
-    }
-
     padding-top: 48px;
     padding-bottom: 204px;
   }
@@ -125,7 +104,7 @@
       margin-right: 0px;
     }
   }
-  //          ШРИФТЫ И СТИЛИ
+
   .advantages__tit {
     font-family: 'Montserrat';
     font-style: normal;
@@ -149,8 +128,6 @@
 }
 
 @media screen and (min-width: 1200px) {
-  //          ПОЗИЦИОНИРОВАНИЕ
-
   .advantages__item {
     justify-content: center;
     margin-right: 32px;
@@ -163,11 +140,7 @@
   .advantages {
     padding-top: 60px;
     padding-bottom: 180px;
-    padding-left: 16px;
-    padding-right: 16px;
   }
-
-  //          ШРИФТЫ И СТИЛИ
 
   .advantages__tit {
     font-family: 'Montserrat';
