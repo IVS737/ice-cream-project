@@ -21,6 +21,15 @@
         </p>
         <button type="button" class="about__button" data-modal-open>
           Read more
+          <svg
+            lang="en"
+            aria-label="icon arrow"
+            class="btn__read-more-icon"
+            width="12"
+            height="12"
+          >
+            <use href="/src/images/icons.svg#icon-arrow"></use>
+          </svg>
         </button>
       </div>
     </div>
@@ -29,29 +38,25 @@
     <div class="modal">
       <button type="button" class="modal__close-btn" data-modal-close>
         <svg
-          aria-label="Кнопка закрити вікно"
+          aria-label="close modal window"
           class="modal__close-icon"
           width="16"
           height="16"
         >
-          <use href="./images/about/icons.svg#icon-close"></use>
+          <use href="/src/images/icons.svg#icon-close"></use>
         </svg>
       </button>
       <form class="modal__form">
         <p class="modal__form-title">How it’s made?</p>
-        <div class="iframe__container">
+        <div class="video-clip__container">
           <iframe
+            class="video-clip__item"
             src="https://www.youtube.com/embed/0fughNkbZTg"
             title="YouTube video player"
             frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
-          <p class="overlay">
-            <svg aria-label="play-icon" class="modal__play-icon">
-              <use href="./images/about/icons.svg#icon-play"></use>
-            </svg>
-          </p>
         </div>
         <p class="description">
           Ice cream is a mixture of milk, cream, sugar, and sometimes other
