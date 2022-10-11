@@ -311,6 +311,10 @@ button {
 }
 
 .about__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4.82px;
   width: 164px;
   height: 42px;
   background-color: var(--accent-color);
@@ -321,7 +325,7 @@ button {
   font-weight: 600;
   font-size: 14px;
   line-height: 1.2857142857;
-  transition: background-color var(--transition-timing-function);
+  transition: background-color, color var(--transition-timing-function);
 }
 .about__button:hover {
   background-color: var(--btn-color-hover);
@@ -332,6 +336,15 @@ button {
 }
 .about__button:disabled {
   background-color: var(--btn-color-disabled);
+}
+
+.btn__read-more-icon {
+  fill: var(--black);
+  line-height: 0;
+  transition: fill var(--transition-timing-function);
+}
+.about__button:focus .btn__read-more-icon {
+  fill: var(--text-color-light);
 }
 
 .about__content {
