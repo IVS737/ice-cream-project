@@ -1,9 +1,10 @@
 .gallery-reviews {
     background-image: url(../images/gallery-and-customer-reviews/Ice-cream-bg-desktop@2x.png);
+    background-size: cover;
 }
 
 .customer-reviews {
-    margin-top: 123px;
+    padding-top: 123px;
 }
 
 .reviewer-photo {
@@ -16,6 +17,7 @@
 .gallery {
     display: flex;
     justify-content: center;
+    
 }
 
 .slink {
@@ -28,33 +30,65 @@
 .reviewer-text {
     font-family: 'Montserrat';
         font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 186%;
-        /* or 30px */
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 255%;
+        /* or 31px */
     
         text-align: center;
-        letter-spacing: 0.04em;
     
         color: #FCFCFC;
         background: #84A178;
             border-radius: 24px;
-            padding-top: 39px;
-            padding-bottom: 47px;
-            padding-left: 109px;
-            padding-right: 109px;
-            width: 969px;
+            padding-top: 34px;
+            padding-bottom: 34px;
+            padding-left: 39px;
+            padding-right: 39px;
+            width: 280px;
+            
+}
+
+@media screen and (min-width:768px) {
+    .reviewer-text {
+        width: 705px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 186%;
+        padding-top: 29px;
+        padding-bottom: 28px;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .reviewer-text {
+        width: 968px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 186%;
+        padding-top: 39px;
+        padding-bottom: 47px;
+        padding-left: 109px;
+        padding-right: 109px;
+    }
 }
 
 .reviewer-name {
     font-family: 'Montserrat';
         font-style: normal;
         font-weight: 500;
-        font-size: 16px;
+        font-size: 20px;
         line-height: 186%;
-        /* identical to box height, or 30px */
+        /* identical to box height, or 37px */
     
         text-align: center;
     
         color: #131313;
+}
+
+@media screen and (min-width:768px) {
+    .reviewer-name {
+        font-size: 16px;
+    }
 }
