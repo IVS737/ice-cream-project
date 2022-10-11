@@ -78,11 +78,13 @@
     
     &:hover{
         background-color: #0A8817;
+        outline: none;
     }
     &:focus {
         background-color: #0A8817;
         color: #FCFCFC;
         fill: #FCFCFC;
+        outline: none;
     }
     &:disabled{
         background-color: #ABABAB; 
@@ -205,12 +207,14 @@
 
     &:hover {
         background-color: #0A8817;
+        outline: none;
     }
 
     &:focus {
         background-color: #0A8817;
         color: #FCFCFC;
         fill: #FCFCFC;
+        outline: none;
     }
 
     &:disabled {
