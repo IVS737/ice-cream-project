@@ -1,36 +1,79 @@
 <!-- mobal header -->
 <div class="bacrdrop">
-    <div class="modal-header">
-        <button type="button" class="modal-header-close-btn">
-            <svg class="modal-header-close-icon" width="16" height="16">
-                <use href="./modal-header__sprite/modal-header.svg#modal-close-icon"></use>
-            </svg>
-            <q class="name-form">Buy now</q>
-        </button>
-        <ul class="order list">
-            <li class="order-list__order">
-                <p class="text-order">ice cream</p>
-            </li>
-            <li class="order-list__order">
-                <p class="text-order">ice coffee</p>
-            </li>
-            <li class="order-list__order">
-                <p class="text-order">milkshake</p>
-            </li>
-        </ul>
-        <form class="contact-form">
-            <label class="modal-form-field">
-                <input type="text" class="contact-form-input" required pattern="[a-zA-Zа-яА-ЯіІїЇ`']+" name="user-name"
-                    placeholder="Name" />
-            </label>
-            <label class="modal-form-field">
-                <input type="tel" class="contact-form-input" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-                    title="xxx-xxx-xx-xx" name="name-phone" placeholder="Phone" />
-            </label>
-            <label class="modal-form-field-coment">
-                <textarea name="user-message" class="contact-form-message" placeholder="Comment"></textarea>
-            </label>
-            <button type="submit" class="contact-form-submit">Submit</button>
-        </form>
-    </div>
+  <div class="modal-header">
+    <button type="button" class="modal-header-close-btn">
+      <svg class="modal-header-close-icon" width="16" height="16">
+        <use
+          href="./modal-header__sprite/modal-header.svg#modal-close-icon"
+        ></use>
+      </svg>
+    </button>
+    <p class="header-name-form">
+      <strong>Buy now</strong>
+    </p>
+
+    <ul class="order list">
+      <li class="order-list-cream__order card-cream">
+        <label>
+          <h3 class="text-order__order cream">ice cream</h3>
+          <input
+            type="checkbox"
+            class="modal-form-check"
+            name="user-name-clik"
+            value="ice cream"
+            required
+          />
+        </label>
+      </li>
+      <li class="order-list-coffee__order card-coffee">
+        <label>
+          <h3 class="text-order__order coffee">ice coffee</h3>
+          <input
+            type="checkbox"
+            class="modal-form-check"
+            name="user-name-clik"
+            value="ice coffee"
+            required
+          />
+        </label>
+      </li>
+      <li class="order-list-milkshake__order card-milkshake">
+        <label>
+          <h3 class="text-order__order milkshake">milkshake</h3>
+          <input
+            type="checkbox"
+            class="modal-form-check"
+            name="user-name-clik"
+            value="milkshake"
+            required
+          />
+        </label>
+      </li>
+    </ul>
+    <form class="contact-form">
+      <input
+        type="text"
+        class="form-input contact"
+        required
+        pattern="[a-zA-Zа-яА-ЯіІїЇ`']+"
+        name="user-name"
+        placeholder="Name"
+      />
+      <input
+        type="tel"
+        class="form-input contact"
+        required
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+        title="xxx-xxx-xx-xx"
+        name="name-phone"
+        placeholder="Phone"
+      />
+      <textarea
+        name="user-message"
+        class="form-input coment"
+        placeholder="Comment"
+      ></textarea>
+      <button type="submit" class="contact-form-header-submit">Submit</button>
+    </form>
+  </div>
 </div>
