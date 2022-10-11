@@ -2,8 +2,9 @@
 
 @import './base/base';
 @import './base/containers';
-
-
+@import './utils/variables';
+@import './utils/mixins'; 
+@import './modal-header';
 @import './header';
 @import './products.scss';
 @import './about.scss';
@@ -12,3 +13,4 @@
 @import './customer-reviews.scss';
 @import './contacts.scss';
 @import './footer.scss';
+ 
