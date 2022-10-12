@@ -25,6 +25,17 @@
     <include src="./partials/footer.html"></include>
 
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-  <!-- <script type="module" src="../src/slick/slick.min.js"></script> -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript">$(document).ready(function () {
+      $('.slick').slick({
+        dots: true,
+        infinite: true,
+        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+    });
+    </script>
   </body>
 </html>
+
