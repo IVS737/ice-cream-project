@@ -9,8 +9,8 @@
   }
 }
 .advantages__list {
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .advantages__tit {
@@ -34,6 +34,7 @@
   line-height: 170%;
   text-align: center;
   color: #fcfcfc;
+  width: 230px;
 }
 
 .visually-hidden {
@@ -116,8 +117,8 @@
     margin-bottom: 32px;
   }
   .advantages__list {
-    padding-left: 44px;
-    padding-right: 44px;
+    padding-left: 0;
+    padding-right: 0;
     display: flex;
     flex-wrap: wrap;
     gap: 80px;
@@ -140,6 +141,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 174%;
+    width: 152px;
   }
 }
 
@@ -171,5 +173,6 @@
     font-size: 16px;
     line-height: 176%;
     letter-spacing: 0.02em;
+    width: 368px;
   }
 }
