@@ -1,0 +1,175 @@
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+.contacts {
+    background-color: rgba(132, 161, 120, 1);
+}
+
+.locations-list__item {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 280px;
+    background-color: #fff;
+    border-radius: 24px;
+
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+.locations-list__title {
+    background-color: #F8D24E;
+    border-radius: 4px;
+    text-align: center;
+    width: 80px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: #131313;
+    margin-bottom: 20px;
+}
+
+.food-truck {
+    width: 138px;
+}
+
+.locations-address__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: #131313;
+    margin-bottom: 8px;
+}
+
+.locations-address__link {
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 183%;
+        letter-spacing: 0.04em;
+        color: #D6936D;
+}
+
+.locations-address {
+    margin-bottom: 24px;
+}
+
+.contacts-schedule__day {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    color: #131313;
+}
+
+.contacts-schedule__time {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    color: #ABABAB;
+}
+
+.contacts-schedule__item-one {
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.detail-contacts__link {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #131313;
+}
+
+.detail-contacts__item {
+    margin-top: 24px;
+}
+
+@media screen and (min-width: 768px) {
+    .locations-list{
+        display: flex;
+        margin-bottom: 60px;
+    }
+    
+    .locations-list__item{
+        width: 224px;
+        height: 528px;
+
+        &:not(:last-child) {
+                margin-right: 16px;
+            }
+    }
+
+    .locations-list__title {
+        width: 73px;
+        font-size: 16px;
+        margin-bottom: 32px;
+    }
+
+    .locations-address__title{
+        margin-bottom: 12px;
+    }
+
+    .detail-contacts__link {
+        margin-top: 32px;
+    }
+
+    .food-truck {
+        width: 138px;
+    }
+
+    .locations-address__title,
+    .locations-address__link,
+    .contacts-schedule__day,
+    .contacts-schedule__time,
+    .detail-contacts__link {
+        font-size: 14px;
+    }
+
+    .contacts-schedule__item-two {
+        margin-bottom: 32px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .locations-list__item {
+        width: 368px;
+        height: 538px;
+    
+            &:not(:last-child) {
+                margin-right: 32px;
+            }
+        }
+
+    .locations-address__title,
+    .locations-address__link,
+    .contacts-schedule__day,
+    .contacts-schedule__time,
+    .detail-contacts__link {
+        font-size: 16px;
+    }
+}
