@@ -191,21 +191,16 @@
     .contact-form {
         display: flex;
         flex-direction: column;
+        gap: 12px;
     }
-    .modal-form-field {
-        width: 224px;
-        height: 32px;
-        background: rgba(248, 210, 78, 0.1);
-        border: 1px solid #84A178;
-        border-radius: 10px;
-        margin-bottom: 12px;
-    }
+    
     .coment {
         height: 64px;
         resize: none;
     }
     .contact {
         height: 32px;
+       
     }
 
     .modal-form-check {
@@ -227,7 +222,7 @@
         background: rgba(248, 210, 78, 0.1);
         border: 1px solid #84A178;
         border-radius: 10px;
-        margin-bottom: 12px;
+        margin-bottom: 0px;
     }
     .contact-form-header-submit {
         background: #F8D24E;
@@ -247,6 +242,8 @@
         height: 42px;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 24px;
+        
     }
 }
 
@@ -286,8 +283,8 @@
 
     .modal-header-close-btn {
         position: absolute;
-        top: 8px;
-        right: 8px;
+        top: 20px;
+        right: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -407,6 +404,7 @@
             margin-bottom: -60px;
         }
     }
+
     .card-milkshake::before {
         background-image: url(../images/header-modal/modal-card/milkshake-tablet.jpg);
         height: 132px;
