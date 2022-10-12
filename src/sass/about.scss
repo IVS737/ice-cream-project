@@ -1,43 +1,8 @@
 .about {
-<<<<<<< HEAD
-    background-color: #84A178;
-    color: #FCFCFC;
-}
-
-=======
-
->>>>>>> 0ceac82ef7823b0a18a3770fd588d705833f4dc7
 .about__title {
     padding-top: 12px;
     padding-bottom: 54px;
     font-family: 'Seymour One';
-<<<<<<< HEAD
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 1.27;
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-}
-
-.about__label {
-    padding-top: 60px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.22;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-@media screen and (max-width: 480px) {
-    .about__description_mobile {
-        display: none;
-    }
-}
-
-=======
     @include font (400, 30px, 38px);
     letter-spacing: 0.04em;
     text-align: center;
@@ -83,28 +48,14 @@
         fill: var(--text-color-light);
    }
 }
->>>>>>> 0ceac82ef7823b0a18a3770fd588d705833f4dc7
 .about__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-<<<<<<< HEAD
-    padding-left: 50px;
-    padding-right: 50px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 162%;
-    text-align: center;
-    letter-spacing: 0.04em;
-
-=======
     font-family: 'Montserrat';
     @include font (400, 12px, 19px);
     letter-spacing: 0.04em;
     text-align: center;
->>>>>>> 0ceac82ef7823b0a18a3770fd588d705833f4dc7
     &::before {
         content: "";
         border: 0px;
@@ -115,21 +66,11 @@
         background-position: center;
     }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 0ceac82ef7823b0a18a3770fd588d705833f4dc7
 .about__description {
     display: flex;
     flex-direction: column;
     gap: 3.83px;
     justify-content: center;
-<<<<<<< HEAD
-}
-
-@media screen and (max-width: 767px) {
-
-=======
     padding-left: 35px;
     padding-right: 35px;
 }
@@ -218,26 +159,10 @@
     }
 }
 @media screen and (max-width: 767px){
->>>>>>> 0ceac82ef7823b0a18a3770fd588d705833f4dc7
     .about__content::before {
         width: 279px;
         height: 279px;
         margin-bottom: 40px;
-<<<<<<< HEAD
-        box-shadow: 0 -21.82 0 0 #F8D24E;
-        background-image: url(../images/about/cow-mobile.jpg);
-
-        @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-            background-image: url(../images/about/cow-mobile2x.jpg);
-        }
-    }
-
-    .about__button {
-        width: 164px;
-        height: 42px;
-=======
         box-shadow: 0 -21.82 0 0 rgba(248, 210, 78, 0.7);
         background-image: url(../images/about/cowmobile.jpg);  
         @media
@@ -248,52 +173,23 @@
         }
     }
     .about__button {
->>>>>>> 0ceac82ef7823b0a18a3770fd588d705833f4dc7
         margin-left: auto;
         margin-right: auto;
         margin-top: 20px;
     }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 0ceac82ef7823b0a18a3770fd588d705833f4dc7
 @media screen and (min-width: 768px) {
     .about__title {
         padding-left: auto;
         padding-right: auto;
         padding-bottom: 79px;
-<<<<<<< HEAD
-        font-size: 34px;
-        line-height: 1.26;
-        letter-spacing: 0.06em;
-    }
-
-=======
         @include font (400, 34px, 43px);
         letter-spacing: 0.06em;
     }
->>>>>>> 0ceac82ef7823b0a18a3770fd588d705833f4dc7
     .about__label {
         font-size: 22px;
         line-height: 1.23;
     }
-<<<<<<< HEAD
-
-    .about__description {
-        width: 336px;
-        gap: 8px;
-        text-align: left;
-        margin-left: 32px;
-    }
-
-    .about__button {
-        width: 164px;
-        height: 42px;
-        margin-top: 48px;
-    }
-
-=======
     .about__description {
         width: 50%; 
         gap: 8px;
@@ -302,7 +198,6 @@
     .about__button {
         margin-top: 40px;
     }
->>>>>>> 0ceac82ef7823b0a18a3770fd588d705833f4dc7
     .about__content {
         flex-direction: row;
         justify-content: center;
@@ -310,27 +205,10 @@
         line-height: 176%;
         padding: 0px;
     }
-<<<<<<< HEAD
-
-=======
->>>>>>> 0ceac82ef7823b0a18a3770fd588d705833f4dc7
     .about__content::before {
         width: 330px;
         height: 330px;
         margin-bottom: 0;
-<<<<<<< HEAD
-        box-shadow: 0 -25.88 0 0 #F8D24E;
-        background-image: url(../images/about/cow-tablet.jpg);
-
-        @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-            background-image: url(../images/about/cow-tablet2x.jpg);
-        }
-    }
-}
-
-=======
         box-shadow: 0 -25.88 0 0 rgba(248, 210, 78, 0.7);
         background-image: url(../images/about/cowtablet.jpg);
         @media
@@ -363,24 +241,11 @@
         height: 205px;
     }
 }
->>>>>>> 0ceac82ef7823b0a18a3770fd588d705833f4dc7
 @media screen and (min-width: 1200px) {
     .about__title {
         padding-bottom: 121px;
         font-size: 36px;
     }
-<<<<<<< HEAD
-
-    .about__label {
-        font-size: 30px;
-    }
-
-    .about__description {
-        width: 463px;
-        margin-left: 100px;
-    }
-
-=======
     .about__label {
         font-size: 30px;
     }
@@ -388,27 +253,10 @@
         width: 463px;
         margin-left: 65px;   
     }
->>>>>>> 0ceac82ef7823b0a18a3770fd588d705833f4dc7
     .about__content {
         font-size: 14px;
         line-height: 194%;
     }
-<<<<<<< HEAD
-
-    .about__content::before {
-        width: 490px;
-        height: 490px;
-        box-shadow: 0 -39 0 0 #F8D24E;
-        background-image: url(../images/about/cow-desktop.jpg);
-
-        @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-            background-image: url(../images/about/cow-desktop2x.jpg);
-        }
-    }
-}
-=======
     .about__content::before {
         width: 490px;
         height: 490px;
@@ -422,4 +270,4 @@
         }
     }
 }  
->>>>>>> 0ceac82ef7823b0a18a3770fd588d705833f4dc7
+}

@@ -49,11 +49,6 @@ button {
     width: 1200px;
   }
 }
-<<<<<<< HEAD
-.about {
-  background-color: #84A178;
-  color: #FCFCFC;
-=======
 :root {
   --accent-color: #F8D24E;
   --background-color-green: #84A178;
@@ -291,7 +286,6 @@ button {
 .about {
   background-color: var(--background-color-green);
   color: var(--title-color-light);
->>>>>>> 0ceac82ef7823b0a18a3770fd588d705833f4dc7
 }
 
 .about__title {
@@ -300,42 +294,23 @@ button {
   font-family: "Seymour One";
   font-weight: 400;
   font-size: 30px;
-<<<<<<< HEAD
-  line-height: 1.27;
-  text-align: center;
-  letter-spacing: 0.04em;
-=======
   line-height: 1.2666666667;
   letter-spacing: 0.04em;
   text-align: center;
->>>>>>> 0ceac82ef7823b0a18a3770fd588d705833f4dc7
   text-transform: uppercase;
 }
 
 .about__label {
   padding-top: 60px;
   font-family: "Montserrat";
-<<<<<<< HEAD
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.22;
-=======
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.2222222222;
->>>>>>> 0ceac82ef7823b0a18a3770fd588d705833f4dc7
   text-align: center;
   text-transform: uppercase;
 }
 
-<<<<<<< HEAD
-@media screen and (max-width: 480px) {
-  .about__description_mobile {
-    display: none;
-  }
-}
-=======
 .about__button {
   display: flex;
   justify-content: center;
@@ -373,29 +348,16 @@ button {
   fill: var(--text-color-light);
 }
 
->>>>>>> 0ceac82ef7823b0a18a3770fd588d705833f4dc7
 .about__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-<<<<<<< HEAD
-  padding-left: 50px;
-  padding-right: 50px;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 162%;
-  text-align: center;
-  letter-spacing: 0.04em;
-=======
   font-family: "Montserrat";
   font-weight: 400;
   font-size: 12px;
   line-height: 1.5833333333;
   letter-spacing: 0.04em;
   text-align: center;
->>>>>>> 0ceac82ef7823b0a18a3770fd588d705833f4dc7
 }
 .about__content::before {
   content: "";
@@ -412,10 +374,6 @@ button {
   flex-direction: column;
   gap: 3.83px;
   justify-content: center;
-<<<<<<< HEAD
-}
-
-=======
   padding-left: 35px;
   padding-right: 35px;
 }
@@ -516,17 +474,12 @@ button {
     display: none;
   }
 }
->>>>>>> 0ceac82ef7823b0a18a3770fd588d705833f4dc7
 @media screen and (max-width: 767px) {
   .about__content::before {
     width: 279px;
     height: 279px;
     margin-bottom: 40px;
-<<<<<<< HEAD
-    box-shadow: 0 -21.82 0 0 #F8D24E;
-=======
     box-shadow: 0 -21.82 0 0 rgba(248, 210, 78, 0.7);
->>>>>>> 0ceac82ef7823b0a18a3770fd588d705833f4dc7
     background-image: url(../images/about/cowmobile.jpg);
   }
 }
@@ -537,11 +490,6 @@ button {
 }
 @media screen and (max-width: 767px) {
   .about__button {
-<<<<<<< HEAD
-    width: 164px;
-    height: 42px;
-=======
->>>>>>> 0ceac82ef7823b0a18a3770fd588d705833f4dc7
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
@@ -552,14 +500,9 @@ button {
     padding-left: auto;
     padding-right: auto;
     padding-bottom: 79px;
-<<<<<<< HEAD
-    font-size: 34px;
-    line-height: 1.26;
-=======
     font-weight: 400;
     font-size: 34px;
     line-height: 1.2647058824;
->>>>>>> 0ceac82ef7823b0a18a3770fd588d705833f4dc7
     letter-spacing: 0.06em;
   }
   .about__label {
@@ -567,24 +510,12 @@ button {
     line-height: 1.23;
   }
   .about__description {
-<<<<<<< HEAD
-    width: 336px;
-    gap: 8px;
-    text-align: left;
-    margin-left: 32px;
-  }
-  .about__button {
-    width: 164px;
-    height: 42px;
-    margin-top: 48px;
-=======
     width: 50%;
     gap: 8px;
     text-align: left;
   }
   .about__button {
     margin-top: 40px;
->>>>>>> 0ceac82ef7823b0a18a3770fd588d705833f4dc7
   }
   .about__content {
     flex-direction: row;
@@ -597,11 +528,7 @@ button {
     width: 330px;
     height: 330px;
     margin-bottom: 0;
-<<<<<<< HEAD
-    box-shadow: 0 -25.88 0 0 #F8D24E;
-=======
     box-shadow: 0 -25.88 0 0 rgba(248, 210, 78, 0.7);
->>>>>>> 0ceac82ef7823b0a18a3770fd588d705833f4dc7
     background-image: url(../images/about/cowtablet.jpg);
   }
 }
@@ -610,8 +537,6 @@ button {
     background-image: url(../images/about/cowtablet@2x.jpg);
   }
 }
-<<<<<<< HEAD
-=======
 @media screen and (min-width: 768px) {
   .modal {
     width: 568px;
@@ -646,7 +571,6 @@ button {
     height: 205px;
   }
 }
->>>>>>> 0ceac82ef7823b0a18a3770fd588d705833f4dc7
 @media screen and (min-width: 1200px) {
   .about__title {
     padding-bottom: 121px;
@@ -657,11 +581,7 @@ button {
   }
   .about__description {
     width: 463px;
-<<<<<<< HEAD
-    margin-left: 100px;
-=======
     margin-left: 65px;
->>>>>>> 0ceac82ef7823b0a18a3770fd588d705833f4dc7
   }
   .about__content {
     font-size: 14px;
@@ -670,11 +590,7 @@ button {
   .about__content::before {
     width: 490px;
     height: 490px;
-<<<<<<< HEAD
-    box-shadow: 0 -39 0 0 #F8D24E;
-=======
     box-shadow: 0 -39 0 0 rgba(248, 210, 78, 0.7);
->>>>>>> 0ceac82ef7823b0a18a3770fd588d705833f4dc7
     background-image: url(../images/about/cowdesktop.jpg);
   }
 }
