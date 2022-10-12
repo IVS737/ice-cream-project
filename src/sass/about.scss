@@ -2,22 +2,29 @@
     background-color: var(--background-color-green);
     color: var(--title-color-light);      
 }
+
 .about__title {
+    color: var(--text-color-light);
     padding-top: 12px;
     padding-bottom: 54px;
+    margin-left: auto;
+    margin-right: auto;
     font-family: 'Seymour One';
     @include font (400, 30px, 38px);
     letter-spacing: 0.04em;
     text-align: center;
     text-transform: uppercase;
-}  
+} 
+
 .about__label {
+    color: var(--text-color-light);
     padding-top: 60px;
     font-family: 'Montserrat';
     @include font (700, 18px, 22px);
     text-align: center;
     text-transform: uppercase;
 }
+
 .about__button {
     display: flex;
     justify-content: center;
@@ -43,14 +50,16 @@
         background-color: var(--btn-color-disabled);
     }
 }
+
 .btn__read-more-icon {
-    fill: var(--black);
+    stroke: currentColor;
     line-height: 0;
-    transition: fill var(--transition-timing-function);
+    transition: stroke var(--transition-timing-function);
    .about__button:focus & {
-        fill: var(--text-color-light);
+        stroke: var(--text-color-light);
    }
 }
+
 .about__content {
     display: flex;
     flex-direction: column;
@@ -69,14 +78,15 @@
         background-position: center;
     }
 }
+
 .about__description {
+    color: var(--text-color-light);
     display: flex;
     flex-direction: column;
     gap: 3.83px;
     justify-content: center;
-    padding-left: 35px;
-    padding-right: 35px;
 }
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -87,6 +97,7 @@
     z-index: 5;
     transition: opacity 500ms linear, visibility 500ms linear, transform 500ms linear;
 }
+
 .backdrop.is-hidden { 
     visibility: hidden;
     opacity: 0;
@@ -106,6 +117,7 @@
     border-radius: 10px;
     padding: 28px 28px; 
 }
+
 .modal__form {
     display: flex;
     flex-direction: column;
@@ -115,12 +127,14 @@
     font-family: 'Montserrat';
     @include font (400, 14px, 20px);
 }
+
 .modal__form-title {
     font-family: 'Seymour One';
     @include font (400, 16px, 24px);
     letter-spacing: 0.04em;
     text-align: center;
 }
+
 .modal__close-btn {
     display: flex;
     justify-content: center;
@@ -134,6 +148,7 @@
     background-color: transparent;
     padding: 0;
 }
+
 .modal__close-icon {
     fill: var(--text-color-dark);
     border: 0;
@@ -142,6 +157,7 @@
         fill: var(--accent-color);
     }
 }
+
 .video-clip__container {
     overflow: hidden;
     width: 224px;
@@ -149,6 +165,7 @@
     background-color: var(--background-color-green);
     border-radius: 10px;
 }
+
 .video-clip__item {
     display: block;
     height: 100%;
@@ -160,7 +177,18 @@
     .about__description_mobile {
     display: none;
     }
+
+    .about__title {
+        width:200px;
+    }
+
+    .about__description {
+        width:220px;    
+        margin-left:auto;
+        margin-right:auto; 
+    }
 }
+
 @media screen and (max-width: 767px){
     .about__content::before {
         width: 279px;
@@ -175,12 +203,14 @@
             background-image: url(../images/about/cowmobile@2x.jpg);
         }
     }
-    .about__button {
+
+    .about__button {  
         margin-left: auto;
         margin-right: auto;
         margin-top: 20px;
     }
 }
+
 @media screen and (min-width: 768px) {
     .about__title {
         padding-left: auto;
@@ -196,7 +226,8 @@
     .about__description {
         width: 50%; 
         gap: 8px;
-        text-align: left;   
+        text-align: left;
+        margin-left: 32px; 
     }
     .about__button {
         margin-top: 40px;
@@ -244,6 +275,7 @@
         height: 205px;
     }
 }
+
 @media screen and (min-width: 1200px) {
     .about__title {
         padding-bottom: 121px;
@@ -254,7 +286,7 @@
     }
     .about__description {
         width: 463px;
-        margin-left: 65px;   
+        margin-left: 100px;   
     }
     .about__content {
         font-size: 14px;
@@ -271,5 +303,8 @@
             screen and (min-resolution: 2dppx) {
             background-image: url(../images/about/cowdesktop@2x.jpg);
         }
+    }
+    .about__description_text-shadow {
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
 }  
