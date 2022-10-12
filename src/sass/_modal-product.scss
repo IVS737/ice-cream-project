@@ -69,7 +69,7 @@
     }
 
     .product-modal-images {
-        background-image: url(../images/product-modal/foto-modal-product.jpg);
+        background-image: url(../images/modal-product/foto-modal-product.png);
         border-radius: 50%;
         background-repeat: no-repeat;
         background-position: center;
@@ -306,7 +306,7 @@
     }
 
     .product-modal-images {
-        background-image: url(../images/product-modal/foto-modal-product.jpg);
+        background-image: url(../images/modal-product/foto-modal-product.png);
         border-radius: 50%;
         background-repeat: no-repeat;
         background-position: center;
@@ -358,7 +358,7 @@
         line-height: 28px;
         text-align: center;
         color: #131313;
-        padding-bottom: 24px;
+        padding-bottom: 19px;
     }
 
     .product-name-kal {
@@ -479,4 +479,8 @@
         margin-left: auto;
         margin-right: auto;
     }
+}
+
+.modal-product {
+    z-index: 100;
 }
