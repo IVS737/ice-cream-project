@@ -4,7 +4,19 @@
 }
 
 .customer-reviews {
-    padding-top: 123px;
+    margin-top: 75px;
+}
+
+@media screen and (min-width:768px) {
+    .customer-reviews {
+        margin-top: 60px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .customer-reviews {
+        margin-top: 128px;
+    }
 }
 
 .reviewer-photo {
