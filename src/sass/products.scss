@@ -1,0 +1,219 @@
+.prodacts {
+    padding-top: 60px;
+            background-image: url(/src/images/prdukts_backrond.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+}
+
+.products__subtitle {
+font-family: 'Montserrat';
+font-weight: 800;
+font-size: 22px;
+line-height: 1.23; 
+text-align: center;
+text-transform: uppercase; 
+color: #131313;
+}
+
+.products__title {
+margin-bottom: 150px;
+font-family: 'Seymour One';
+font-weight: 400;
+font-size: 34px;
+line-height: 1.26;
+text-align: center;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: #131313;
+}
+
+.products__list {
+    display: flex;
+outline: 3px solid teal;
+}
+
+.products__list_item {
+position: relative;
+display: inline-block;
+border-radius: 24px;
+padding-top: 120px;
+padding-left: 40px;
+padding-bottom: 115px;
+padding-right: 40px;
+}
+
+.products__list_item:not(:last-child) {
+    margin-bottom: 170px;
+}
+
+.blocks-ice-cream {
+background-color: #AEC6A5;
+
+}
+
+.blocks-ice-cream::before {
+        content: '';
+        position: absolute;
+        top: -100px;
+        left: 45px;
+        width: 200px;
+        height: 200px;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 50%;
+        margin-bottom: -60px;
+        background-image: url(/src/images/produkts_image_ice-cream.png);
+        box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+    }
+
+.blocks-ice-cofee {
+background-color: #EFD478;
+}
+
+.blocks-ice-cofee::before {
+content: '';
+position: absolute;
+    top: -100px;
+    left: 45px;
+    width: 200px;
+    height: 200px;
+background-repeat: no-repeat;
+background-position: center;
+box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+border-radius: 50%;
+margin-bottom: -60px;
+background-image: url(/src/images/produkts_image_ice-cofee.png);
+}
+
+.blocks-milkshakes {
+background-color: #D6936D;
+}
+
+.blocks-milkshakes::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: 45px;
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    margin-bottom: -60px;
+    box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+    background-image: url(/src/images/produkts_image_milkshake.png);
+}
+
+.products__card {
+text-align: center;
+}
+
+.products__blocks__title {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 1.23;
+text-align: center;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: #131313;
+padding-bottom: 34px;
+}
+
+.products__blocks__text {
+font-family: 'Montserrat';
+width: 200px;
+height: 124px;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.79;
+text-align: center;
+letter-spacing: 0.04em;
+color: #131313;
+}
+
+.product-modal-button {
+    position: absolute;
+    left: 120px;
+    bottom: 20px;
+    height: auto;
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    outline: none;
+}
+
+.product-modal-button:hover {
+    svg {
+        width: 110%;
+        height: auto;
+    }
+}
+
+.product-modal-button:focus {
+    svg {
+        width: 120%;
+        height: auto;
+    }
+}
+@media screen and (max-width:767px) {
+    .products__list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+/*768px Tablet*/
+@media screen and (min-width:768px) {
+.prodacts {
+    padding-bottom: 75px;
+}
+.products__list {
+
+gap: 15px;
+justify-content: space-between;
+}
+.products__list_item:not(:last-child) {
+    margin-bottom: 0px;
+}
+
+.products__list_item {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.blocks-ice-cream::before,.blocks-milkshakes::before,.blocks-ice-cofee::before {
+    left: 15px;
+}
+}
+
+/*1200px dextop*/
+@media screen and (min-width:768px) {
+
+    .products__list_item {
+            padding-left: 80px;
+            padding-right: 80px;
+            gap: 30px;
+        }
+
+    .blocks-ice-cream::before {
+            content: '';
+            background-image: url(/src/images/products_decstop_ice-cream.jpg);
+            left: 80px;
+        }
+
+    .blocks-ice-cofee::before {
+            content: '';
+            background-image:url(/src/images/products_decstop_cofee.jpg);
+            left: 80px;
+    }
+    .blocks-milkshakes::before {
+            content: '';
+            background-image: url(/src/images/products_decstop_milkshake.jpg);
+            left: 80px;
+}
+
+}
