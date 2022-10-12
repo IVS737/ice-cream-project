@@ -83,12 +83,14 @@
     &:focus {
         background-color: #0A8817;
         color: #FCFCFC;
-        fill: #FCFCFC;
         outline: none;
     }
     &:disabled{
         background-color: #ABABAB; 
     }
+}
+.buy-btn__icon{
+    stroke: currentColor;
 }
 
 .menu-toggle {
