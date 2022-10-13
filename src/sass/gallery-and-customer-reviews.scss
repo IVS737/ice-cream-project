@@ -9,13 +9,17 @@
 
 @media screen and (min-width:768px) {
     .customer-reviews {
-        margin-top: 60px;
+        margin-top: 0px;
+        padding-top: 150px;
+        padding-bottom: 370px;
     }
 }
 
 @media screen and (min-width:1200px) {
     .customer-reviews {
-        margin-top: 128px;
+        margin-top: 0px;
+        padding-bottom: 220px;
+        padding-top: 300px;
     }
 }
 
@@ -31,7 +35,25 @@
 .gallery {
     display: flex;
     justify-content: center;
-    
+    position: absolute;
+    left: 65px;
+    top: -130px;
+
+
+}
+
+@media screen and (min-width:768px) {
+    .gallery {
+        left: 35px;
+        top: -160;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .gallery {
+        top: -100px;
+        left: 90px;
+    }
 }
 
 .slink {
@@ -39,6 +61,7 @@
     flex-direction: column;
     gap: 32px;
     align-items: center;
+    padding-top: 75px;
 }
 
 .reviewer-text {
@@ -131,4 +154,13 @@
         }
 }
 
+.gallery-reviews__container {
+    position: relative;
+}
+
+@media screen and (max-width:767px) {
+    .gallery-reviews__container {
+    padding-bottom: 390px;
+    }
+}
 
