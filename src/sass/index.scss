@@ -1,8 +1,9 @@
 @import './common';
 
-@import './base/base';
+@import './base/base';  
 @import './base/containers';
-
+@import './utils/variables';
+@import './utils/mixins'; 
 @import './modal-header';
 @import './modal-product';
 @import './header';
@@ -13,3 +14,4 @@
 @import './gallery-and-customer-reviews.scss';
 @import './contacts.scss';
 @import './footer.scss';
+ 
