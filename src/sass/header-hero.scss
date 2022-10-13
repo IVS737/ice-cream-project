@@ -54,6 +54,7 @@
     // left: 50%;
     // bottom: -50%;
     // transform: translate(-50%,-50%);
+
     left: 50%;
     bottom: -12%;
     @media (max-width: 767px){
@@ -69,7 +70,20 @@
         bottom: -18%;
         transform: translateX(85%);
     }
+
+    //  animation: rotateX 1500ms infinite alternate ease-in-out
 }
+
+@keyframes rotateX {
+    0% {
+        transform: perspective(400px) rotateX(0deg);
+    }
+
+    100% {
+        transform: perspective(400px) rotateX(60deg);
+    }
+}
+
 
 .hero__title{
     font-family: 'Seymour One', sans-serif;
@@ -282,6 +296,20 @@
     }
 
 
+}
+
+.hero-cart__img{
+    animation: sizeDish 2000ms linear 500ms;
+}
+
+@keyframes sizeDish {
+    0% {
+        transform: scale(1.1) rotate(0deg);
+    }
+
+    100% {
+        transform: scale(1) rotate(360deg);
+    }
 }
 
 .hero-cart__text{
