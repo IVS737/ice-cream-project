@@ -70,7 +70,7 @@
 }
 
 .locations-address {
-    margin-bottom: 24px;
+    margin-bottom: 0px;
 }
 
 .contacts-schedule__day {
@@ -94,6 +94,10 @@
 .contacts-schedule__item-one {
     margin-top: 24px;
     margin-bottom: 8px;
+}
+
+.contacts-schedule__item-two{
+    margin-bottom: 0px;
 }
 
 .detail-contacts__link {
@@ -135,7 +139,12 @@
     }
 
     .detail-contacts__link {
-        margin-top: 32px;
+        display: block;
+        margin-bottom: 8px;
+
+        &:not(:last-child) {
+            margin-top: 32px;
+        }
     }
 
     .food-truck {
@@ -149,16 +158,11 @@
     .detail-contacts__link {
         font-size: 14px;
     }
-
-    .contacts-schedule__item-two {
-        margin-bottom: 32px;
-    }
 }
 
 @media screen and (min-width: 1200px) {
     .locations-list__item {
         width: 368px;
-        height: 538px;
     
             &:not(:last-child) {
                 margin-right: 32px;
@@ -172,4 +176,19 @@
     .detail-contacts__link {
         font-size: 16px;
     }
+}
+
+.contacts-list__item:not(:last-child) {
+    border-bottom: 1px solid #E1E1E1;
+    padding-bottom: 24px;
+}
+
+@media screen and (min-width:768px) {
+    .contacts-list__item {
+        padding-bottom: 32px;
+    }
+}
+
+.contacts-list__adress {
+    border-bottom: none;
 }
