@@ -80,7 +80,8 @@ border-radius: 24px;
 .blocks-ice-cream::before {
         content: '';
         position: absolute;
-        top: -100px;
+        z-index: 2;
+        top: -120px;
         left: 45px;
         width: 200px;
         height: 200px;
@@ -89,26 +90,58 @@ border-radius: 24px;
         border-radius: 50%;
         margin-bottom: -60px;
         background-image: url(/src/images/produkts_image_ice-cream.png);
-        box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
     }
 
-.blocks-ice-cofee {
-background-color: #EFD478;
-}
 
-.blocks-ice-cofee::before {
-content: '';
-position: absolute;
+.ice-cream-shadow::before {
+    content: '';
+    position: absolute;
+    z-index: 1;
     top: -100px;
     left: 45px;
     width: 200px;
     height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    margin-bottom: -60px;
+    box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+    background-image: url(/src/images/products_img/productd-elips-ice-cream.png);
+}
+
+.blocks-ice-coffee {
+background-color: #EFD478;
+}
+
+.blocks-ice-coffee::before {
+content: '';
+position: absolute;
+z-index: 2;
+top: -120px;
+left: 45px;
+width: 200px;
+height: 200px;
 background-repeat: no-repeat;
 background-position: center;
-box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
 border-radius: 50%;
 margin-bottom: -60px;
 background-image: url(/src/images/produkts_image_ice-cofee.png);
+}
+
+.ice-coffee-shadow::before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -100px;
+    left: 45px;
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    margin-bottom: -60px;
+    box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+    background-image: url(/src/images/products_img/products_elips_ice-coffe.png);
 }
 
 .blocks-milkshakes {
@@ -118,6 +151,22 @@ background-color: #D6936D;
 .blocks-milkshakes::before {
     content: '';
     position: absolute;
+    z-index: 2;
+    top: -120px;
+    left: 45px;
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    margin-bottom: -60px;
+    background-image: url(/src/images/produkts_image_milkshake.png);
+}
+
+.milkshakes-shadow::before {
+    content: '';
+    position: absolute;
+    z-index: 1;
     top: -100px;
     left: 45px;
     width: 200px;
@@ -126,8 +175,8 @@ background-color: #D6936D;
     background-position: center;
     border-radius: 50%;
     margin-bottom: -60px;
-    box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
-    background-image: url(/src/images/produkts_image_milkshake.png);
+    box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+    background-image: url(/src/images/products_img/productd-elips-milkshake.png);
 }
 
 .products__card {
@@ -253,7 +302,7 @@ gap: 16px;
     padding-left: 15px;
     padding-right: 15px;
 }
-.blocks-ice-cream::before,.blocks-milkshakes::before,.blocks-ice-cofee::before {
+.blocks-ice-cream::before,.blocks-milkshakes::before,.blocks-ice-coffee::before {
     left: 15px;
 }
 }
@@ -270,20 +319,27 @@ gap: 16px;
     .blocks-ice-cream::before {
             content: '';
             background-image: url(/src/images/products_decstop_ice-cream.jpg);
-            
         }
-
-    .blocks-ice-cofee::before {
+.ice-cream-shadow::before {
+    content: '';
+    left: 16px;
+}
+    .blocks-ice-coffee::before {
             content: '';
+            left: 16px;
             background-image:url(/src/images/products_decstop_cofee.jpg);
-            
+}
+.ice-coffee-shadow::before {
+    left: 16px;
     }
     .blocks-milkshakes::before {
             content: '';
-            background-image: url(/src/images/products_decstop_milkshake.jpg);
-            
+            background-image: url(/src/images/products_decstop_milkshake.jpg);  
 }
-
+.milkshakes-shadow::before {
+    content: '';
+    left: 16px;
+}
 }
 
 @media screen and (min-width:1200px) {
@@ -300,15 +356,35 @@ gap: 16px;
         height: 300px;
         top: -185px;
     }
+
+    .ice-cream-shadow::before {
+        content: '';
+        width: 300px;
+        height: 300px;
+        top: -160px;
+        left: 33px;
+        background-image: url(/src/images/products_img/Ellipse_ice-cream.png);
+}
+
 }
 
 @media screen and (min-width:1200px) {
-    .blocks-ice-cofee::before {
+    .blocks-ice-coffee::before {
         left: 33px;
         width: 300px;
         height: 300px;
         top: -185px;
     }
+
+.ice-coffee-shadow::before {
+content: '';
+width: 300px;
+height: 300px;
+top: -160px;
+left: 33px;
+background-image: url(/src/images/products_img/Ellipse_ice-coffee.png);
+}
+
 }
 
 @media screen and (min-width:1200px) {
@@ -317,5 +393,14 @@ gap: 16px;
             width: 300px;
             height: 300px;
             top: -185px;
+    }
+
+.milkshakes-shadow::before {
+content: '';
+        width: 300px;
+        height: 300px;
+        top: -160px;
+        left: 33px;
+background-image: url(/src/images/products_img/Ellipse_milkshakes.png);
     }
 }
