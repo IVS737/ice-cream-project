@@ -4,28 +4,3 @@
   padding-right: 15px;
 }
 
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    padding-left: 34px;
-    padding-right: 34px;
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .container {
-    padding-left: 16px;
-    padding-right: 16px;
-    width: 1200px;
-  }
-}
