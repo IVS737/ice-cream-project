@@ -100,6 +100,15 @@ margin-bottom:32px;
     padding:12px 34px;
 }
 
+.modal-location__button:hover {
+    background: #0A8817;
+}
+
+.modal-location__button:focus {
+    color: #FCFCFC;
+        background: #0A8817;
+}
+
 @media screen and (max-width:768px){
     .modal-location__button{
     width: 134px;

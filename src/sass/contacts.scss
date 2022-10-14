@@ -238,6 +238,16 @@
         color: #131313;
 }
 
+.contact__button:hover {
+ background: #0A8817;
+}
+
+.contact__button:focus {
+    color: #FCFCFC;
+    background: #0A8817;
+}
+
+
 .contact__button-location {
 background: #F8D24E;
     border-radius: 10px;
