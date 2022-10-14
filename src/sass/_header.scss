@@ -1,17 +1,28 @@
 .page-header{
-    background-color: #84A178;
+    position: relative;
 }
 .main-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
     display: flex;
     align-items: center;
     padding-top: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
 
     @media (min-width: 768px) {
-    padding-top: 20px;            
+    padding-top: 20px; 
+    padding-left: 34px;
+    padding-right: 34px;
     }
 
     @media (min-width: 1200px) {
         padding-top: 8px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
 }
@@ -78,15 +89,19 @@
     
     &:hover{
         background-color: #0A8817;
+        outline: none;
     }
     &:focus {
         background-color: #0A8817;
         color: #FCFCFC;
-        fill: #FCFCFC;
+        outline: none;
     }
     &:disabled{
         background-color: #ABABAB; 
     }
+}
+.buy-btn__icon{
+    stroke: currentColor;
 }
 
 .menu-toggle {
@@ -205,12 +220,14 @@
 
     &:hover {
         background-color: #0A8817;
+        outline: none;
     }
 
     &:focus {
         background-color: #0A8817;
         color: #FCFCFC;
         fill: #FCFCFC;
+        outline: none;
     }
 
     &:disabled {
