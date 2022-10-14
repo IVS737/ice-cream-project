@@ -233,6 +233,11 @@
         text-align: center;
     
         color: #131313;
+
+        display: flex;
+        justify-content: center;
+        
+        gap: 10px;
 }
 
 .contact__button-location {
@@ -281,3 +286,4 @@ background: #F8D24E;
 .contact__container {
     position: relative;
 }
+
