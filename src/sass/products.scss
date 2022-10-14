@@ -3,6 +3,7 @@
     padding-bottom: 60px;
             background-image: url(/src/images/prdukts_backrond.png);
             background-repeat: no-repeat;
+            background-size: cover;
             
 }
 
@@ -363,7 +364,7 @@ gap: 16px;
         height: 300px;
         top: -160px;
         left: 33px;
-        background-image: url(/src/images/products_img/Ellipse_ice-cream.png);
+        box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
 }
 
 }
@@ -382,7 +383,7 @@ width: 300px;
 height: 300px;
 top: -160px;
 left: 33px;
-background-image: url(/src/images/products_img/Ellipse_ice-coffee.png);
+box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
 }
 
 }
@@ -401,6 +402,6 @@ content: '';
         height: 300px;
         top: -160px;
         left: 33px;
-background-image: url(/src/images/products_img/Ellipse_milkshakes.png);
+        box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
     }
 }
