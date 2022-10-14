@@ -645,3 +645,15 @@ background: #0A8817;
     color: #FCFCFC;
         background: #0A8817;
 }
+
+.modal-form-check:checked + .cream.text-order__order {
+    background: #aec6a5;
+}
+
+.modal-form-check:checked + .coffee.text-order__order {
+    background: #efd478;
+}
+
+.modal-form-check:checked + .milkshake.text-order__order {
+    background: #d6936d;
+}
