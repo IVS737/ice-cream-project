@@ -20,6 +20,8 @@
     <!-- ❗️❗️❗️ Add partials like so for every page -->
     <include src="./partials/modal-header.html"></include>
     <include src="./partials/modal-product.html"></include>
+    <!-- <include src="./partials/modal-location.html"></include>
+    <include src="./partials/modal-franchise.html"></include> -->
     <include src="./partials/header.html"></include>
     <include src="./partials/header-hero.html"></include>
     <include src="./partials/products.html"></include>
@@ -29,6 +31,22 @@
     <include src="./partials/contacts.html"></include>
     <include src="./partials/footer.html"></include>
 
+      <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+      <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      <script type="text/javascript">$(document).ready(function () {
+          $('.slink').slick({
+            dots: true,
+            infinite: true,
+            arrows: false,
+            slidesToShow: 1,
+            slidesToScroll: 1
+          });
+        });
+      </script>
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous">
+        </script>
   </body>
 </html>
 
