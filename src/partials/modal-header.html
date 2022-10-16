@@ -1,0 +1,80 @@
+<!-- mobal header -->
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal-header">
+    <button type="button" class="modal-header-close-btn" data-modal-close>
+      <svg class="modal-header-close-icon" width="16" height="16">
+        <use
+          href="./modal-header__sprite/modal-header.svg#modal-close-icon"
+        ></use>
+      </svg>
+    </button>
+    <p class="header-name-form">
+      <strong>Buy now</strong>
+    </p>
+    <div class="modal-header-order">
+      <ul class="order list">
+        <li class="order-list-cream__order card-cream">
+          <label>
+            <input
+              type="checkbox"
+              class="modal-form-check"
+              name="user-name-clik"
+              value="ice cream"
+              required
+            />
+            <h3 class="text-order__order cream">ice cream</h3>
+          </label>
+        </li>
+        <li class="order-list-coffee__order card-coffee">
+          <label>
+            <input
+              type="checkbox"
+              class="modal-form-check"
+              name="user-name-clik"
+              value="ice coffee"
+              required
+            />
+            <h3 class="text-order__order coffee">ice coffee</h3>
+          </label>
+        </li>
+        <li class="order-list-milkshake__order card-milkshake">
+          <label>
+            <input
+              type="checkbox"
+              class="modal-form-check"
+              name="user-name-clik"
+              value="milkshake"
+              required
+            />
+            <h3 class="text-order__order milkshake">milkshake</h3>
+          </label>
+        </li>
+      </ul>
+    </div>
+    <form class="contact-form">
+      <input
+        type="text"
+        class="form-input contact"
+        required
+        pattern="[a-zA-Zа-яА-ЯіІїЇ`']+"
+        name="user-name"
+        placeholder="Name"
+      />
+      <input
+        type="tel"
+        class="form-input contact"
+        required
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+        title="xxx-xxx-xx-xx"
+        name="name-phone"
+        placeholder="Phone"
+      />
+      <textarea
+        name="user-message"
+        class="form-input coment"
+        placeholder="Comment"
+      ></textarea>
+      <button type="submit" class="contact-form-header-submit">Submit</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,91 @@
+<!-- mobal product -->
+<div class="backdrop is-hidden" data-products>
+  <div class="modal-product">
+    <button type="button" class="modal-header-close-btn" data-products-close>
+      <svg class="modal-header-close-icon" width="16" height="16">
+        <use href="./modal-header__sprite/modal-header.svg#modal-close-icon"></use>
+      </svg>
+    </button>
+    <p class="product-name-form">
+      <strong>Chololate icecream</strong>
+    </p>
+    <div class="foto-title">
+      <img class="product-modal-images" />
+    </div>
+    <div class="section-kal">
+      <ul class="product-group-kal list">
+        <li class="product-group-amount">
+          <p class="product-name-amount">320</p>
+          <p class="product-name-kal">kcal</p>
+        </li>
+        <li class="product-group-amount">
+          <p class="product-name-amount">4g</p>
+          <p class="product-name-kal">Prote...</p>
+        </li>
+        <li class="product-group-amount">
+          <p class="product-name-amount">8,2g</p>
+          <p class="product-name-kal">Fats</p>
+        </li>
+        <li class="product-group-amount">
+          <p class="product-name-amount">40,4g</p>
+          <p class="product-name-kal">Carbs</p>
+        </li>
+      </ul>
+    </div>
+    <div class="section-ingredients">
+      <h4 class="product-group">Ingredients</h4>
+      <ul class="product-group-ingredients list">
+        <li class="product-group-name">
+          <p class="product-name-ingredient">Milk</p>
+          <p class="product-name-ingredient">100ml</p>
+        </li>
+        <li class="product-group-name">
+          <p class="product-name-ingredient">Belgian chocolate</p>
+          <p class="product-name-ingredient">20g</p>
+        </li>
+        <li class="product-group-name">
+          <p class="product-name-ingredient">Cream</p>
+          <p class="product-name-ingredient">20g</p>
+        </li>
+        <li class="product-group-name">
+          <p class="product-name-ingredient">Cocoa powder</p>
+          <p class="product-name-ingredient">30g</p>
+        </li>
+        <li class="product-group-name">
+          <p class="product-name-ingredient">Sugar</p>
+          <p class="product-name-ingredient">40g</p>
+        </li>
+        <li class="product-group-name">
+          <p class="product-name-ingredient">Vanilla sugar</p>
+          <p class="product-name-ingredient">10g</p>
+        </li>
+      </ul>
+    </div>
+
+    <form class="contact-form">
+      <input
+        type="text"
+        class="form-input contact"
+        required
+        pattern="[a-zA-Zа-яА-ЯіІїЇ`']+"
+        name="user-name"
+        placeholder="Name"
+      />
+      <input
+        type="tel"
+        class="form-input contact"
+        required
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+        title="xxx-xxx-xx-xx"
+        name="name-phone"
+        placeholder="Phone"
+      />
+      <textarea
+        name="user-message"
+        class="form-input coment"
+        placeholder="Comment"
+      ></textarea>
+      <button type="submit" class="contact-form-header-submit">Submit</button>
+    </form>
+  </div>
+</div>

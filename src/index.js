@@ -1,2 +1,6 @@
 import './js/mobile-menu'
 import './js/modal'
+import './js/window'
+import './js/products'
+import './js/location'
+import './js/franchise'

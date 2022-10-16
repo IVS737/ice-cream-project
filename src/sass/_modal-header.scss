@@ -1,0 +1,659 @@
+// 0px - 767px
+
+@media screen and (max-width:767px) {
+    .backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.2);
+        z-index: 2000;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transition: opacity;
+       
+    }
+
+    .backdrop.is-hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+
+    .modal-header {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width:280px;
+        height: 990px;
+        padding: 20px;
+        background: #FCFCFC;
+        border: 2px solid #F8D24E;
+        border-radius: 10px;
+        max-height: 100%;
+        overflow-y: auto;
+        
+    }
+
+    .modal-header-close-btn {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        padding: 0;
+        border: 0;
+      
+    }
+    .header-name-form {
+        font-family: 'Seymour One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        align-items: center;
+        text-align: center;
+        color: #131313;
+        margin-bottom: 20px;
+    }
+
+    
+    .order {
+        display: block;
+        align-items: center;
+        margin-bottom: 24px;
+       
+    }
+    .order-list-cream__order {
+        width: 132px;
+        height: 200px;
+        position: relative;
+        margin-left: auto;
+        padding-top: 73px;
+        margin-right: auto;
+        margin-bottom: 20px;
+        
+
+        &::before {
+            display: block;
+            height: 132px;
+            width: 132px;
+            content: "";
+            background-repeat: no-repeat;
+            background-position: center;
+            background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+            box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+            border-radius: 50%;
+            position: absolute;
+            z-index: 100;
+            top: 73px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow:hidden;
+            transform: translateY(-60px);
+            box-shadow: 0 7 0 rgba(156, 190, 143, 0.7);
+            
+            
+        }
+       
+    }
+    .card-cream::before {
+        background-image: url(../images/header-modal/modal-card/ice-cream-mobile.jpg);
+        height: 132px;
+        width: 132px;
+        
+
+        @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+            screen and (min-resolution: 192dpi) and (max-width: 767px),
+            screen and (min-resolution: 2dppx) and (max-width: 767px) {
+            .card-cream::before {
+                background-image: url(../images/header-modal/modal-card/ice-cream-mobile@2x.jpg);
+            }
+        }
+    }
+    
+    .cream {
+        border: 2px solid #96AF8C;
+        filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+        border-radius: 16px;
+        border-top: none;
+
+        &:hover,
+        &:focus {
+            background-color: #AEC6A5;
+        }
+    }
+    
+    .order-list-coffee__order {
+        width: 132px;
+        height: 200px;
+        position: relative;
+        margin-left: auto;
+        padding-top: 73px;
+        margin-right: auto;
+        margin-bottom: 20px;
+        
+        &::before {
+            display: block;
+            height: 132px;
+            width: 132px;
+            content: "";
+            background-repeat: no-repeat;
+            background-position: center;
+            box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+            border-radius: 50%;
+            position: absolute;
+            z-index: 100;
+            top: 73px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow:hidden;
+            transform: translateY(-60px);
+            box-shadow: 0 7 0 rgba(248, 210, 78, 0.7);
+            
+        }
+    }
+    .card-coffee::before {
+        background-image: url(../images/header-modal/modal-card/ice-coffee-mobile.jpg);
+        height: 132px;
+        width: 132px;
+        
+    
+        @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+        screen and (min-resolution: 192dpi) and (max-width: 767px),
+        screen and (min-resolution: 2dppx) and (max-width: 767px) {
+            .card-cream::before {
+                background-image: url(../images/header-modal/modal-card/ice-coffee-mobile@2x.jpg);
+            }
+        }
+    }
+    .coffee {
+        border: 2px solid #EFD478;
+        border-radius: 16px;
+        border-top: none;
+
+        &:hover,
+        &:focus {
+            background: #EFD478;
+        }
+       
+    }
+     .order-list-milkshake__order {
+        width: 132px;
+        height: 200px;
+        position: relative;
+        margin-left: auto;
+        padding-top: 73px;
+        margin-right: auto;
+        margin-bottom: 24px;
+
+        &::before {
+            display: block;
+            height: 132px;
+            width: 132px;
+            content: "";
+            background-repeat: no-repeat;
+            background-position: center;
+            background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+            box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+            border-radius: 50%;
+            position: absolute;
+            z-index: 100;
+            top: 73px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow:hidden;
+            transform: translateY(-60px);
+            box-shadow: 0 7 0 rgba(213, 117, 63, 0.7);
+            
+        }
+    }
+    .card-milkshake::before {
+        background-image: url(../images/header-modal/modal-card/milkshake-mobile.jpg);
+        height: 132px;
+        width: 132px;
+    
+        @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+        screen and (min-resolution: 192dpi) and (max-width: 767px),
+        screen and (min-resolution: 2dppx) and (max-width: 767px) {
+            .card-cream::before {
+                background-image: url(../images/header-modal/modal-card/vmilkshake-mobile@2x.jpg);
+            }
+        }
+    }
+    .milkshake {
+        border: 2px solid #D6936D;
+        filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+        border-radius: 16px;
+        border-top: none;
+
+        &:hover,
+        &:focus {
+            background: #D6936D;
+        }
+    }
+    .text-order__order {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #131313;
+        width: 132px;
+        height: 136px;
+        padding-top: 96px;
+    }
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .modal-form-field {
+        width: 224px;
+        height: 32px;
+        background: rgba(248, 210, 78, 0.1);
+        border: 1px solid #84A178;
+        border-radius: 10px;
+        margin-bottom: 12px;
+    }
+    
+    .coment {
+        height: 64px;
+        resize: none;
+    }
+    .contact {
+        height: 32px;
+       
+    }
+
+    .modal-form-check {
+        position: absolute;
+        appearance: none;
+      
+    }
+
+    .form-input {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 140%;
+        color: #131313;
+        padding-right: 12px;
+        padding-left: 12px;
+        width: 224px;
+        background: rgba(248, 210, 78, 0.1);
+        border: 1px solid #84A178;
+        border-radius: 10px;
+        margin-bottom: 0px;
+    }
+    .contact-form-header-submit {
+        background: #F8D24E;
+        border-radius: 10px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 15px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        color: #131313;
+        border: none;
+        width: 114px;
+        height: 42px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 24px;
+        
+    }
+}
+
+// 768px -
+@media screen and (min-width: 768px) {
+    .backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.2);
+        z-index: 10000;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transition: opacity;
+        
+    }
+
+    .backdrop.is-hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    .modal-header {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 568px;
+        max-height: 100%;
+        overflow-y: auto;
+        
+        padding-top: 32px;
+        padding-bottom: 32px;
+        background: #FCFCFC;
+        border: 2px solid #F8D24E;
+        border-radius: 10px;
+        
+    }
+
+    .modal-header-close-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        padding: 0;
+        border: 0;
+      
+    }
+    .header-name-form {
+        font-family: 'Seymour One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        align-items: center;
+        text-align: center;
+        color: #131313;
+        margin-bottom: 40px;
+    }
+    .order {
+        display: flex;
+        column-gap: 32px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 40px;
+        
+    }
+    .order-list-cream__order {
+        width: 132px;
+        height: 200px;
+        position: relative;
+        padding-top: 73px;
+            
+        &::before {
+            display: block;
+            height: 132px;
+            width: 132px;
+            content: "";
+            background-repeat: no-repeat;
+            background-position: center;
+            background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+            box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+            border-radius: 50%;
+            position: absolute;
+            z-index: 100;
+            top: 73px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow:hidden;
+            transform: translateY(-60px);
+            box-shadow: 0 7 0 rgba(156, 190, 143, 0.7);
+
+            
+        }
+        
+    }
+    .card-cream::before {
+        background-image: url(../images/header-modal/modal-card/ice-cream-tablet.jpg);
+        height: 132px;
+        width: 132px;
+
+        @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+            screen and (min-resolution: 192dpi) and (max-width: 767px),
+            screen and (min-resolution: 2dppx) and (max-width: 767px) {
+            .card-cream::before {
+                background-image: url(../images/header-modal/modal-card/ice-cream-tablet@2x.jpg);
+            }
+        }
+    }
+    
+    .cream {
+        border: 2px solid #96AF8C;
+        filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+        border-radius: 16px;
+        border-top: none;
+
+        &:hover,
+        &:focus {
+            background-color: #AEC6A5;
+        }
+    }
+
+    
+    
+    .order-list-coffee__order {
+        width: 132px;
+        height: 200px;
+        position: relative;
+        padding-top: 73px;
+
+        
+        
+        &::before {
+            display: block;
+            height: 132px;
+            width: 132px;
+            content: "";
+            background-repeat: no-repeat;
+            background-position: center;
+            background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+            box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+            border-radius: 50%;
+            position: absolute;
+            z-index: 100;
+            top: 73px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow:hidden;
+            transform: translateY(-60px);
+            box-shadow: 0 7 0 rgba(248, 210, 78, 0.7);
+        }
+    }
+    
+    .card-coffee::before {
+        background-image: url(../images/header-modal/modal-card/ice-coffee-tablet.jpg);
+        height: 132px;
+        width: 132px;
+    
+        @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+        screen and (min-resolution: 192dpi) and (max-width: 767px),
+        screen and (min-resolution: 2dppx) and (max-width: 767px) {
+            .card-cream::before {
+                background-image: url(../images/header-modal/modal-card/ice-coffee-tablet@2x.jpg);
+            }
+        }
+    }
+    .coffee {
+        border: 2px solid #EFD478;
+        border-radius: 16px;
+        border-top: none;
+
+        &:hover,
+        &:focus {
+            background: #EFD478;
+        }
+       
+    }
+     .order-list-milkshake__order {
+        width: 132px;
+        height: 200px;
+        position: relative;
+        padding-top: 73px;
+
+        &::before {
+            display: block;
+            height: 132px;
+            width: 132px;
+            content: "";
+            background-repeat: no-repeat;
+            background-position: center;
+            background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+            box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+            border-radius: 50%;
+            position: absolute;
+            z-index: 100;
+            top: 73px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow:hidden;
+            transform: translateY(-60px);
+            box-shadow: 0 7 0 rgba(213, 117, 63, 0.7);
+        }
+       
+    }
+
+    .card-milkshake::before {
+        background-image: url(../images/header-modal/modal-card/milkshake-tablet.jpg);
+        height: 132px;
+        width: 132px;
+    
+        @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+        screen and (min-resolution: 192dpi) and (max-width: 767px),
+        screen and (min-resolution: 2dppx) and (max-width: 767px) {
+            .card-cream::before {
+                background-image: url(../images/header-modal/modal-card/vmilkshake-tablet@2x.jpg);
+            }
+        }
+    }
+    .milkshake {
+        border: 2px solid #D6936D;
+        filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+        border-radius: 16px;
+        border-top: none;
+
+        &:hover,
+        &:focus {
+            background: #D6936D;
+        }
+    }
+    .text-order__order {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #131313;
+        width: 132px;
+        height: 136px;
+        padding-top: 96px;
+    }
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        width: 368px;
+        
+    }
+    
+    .coment {
+        height: 84px;
+        resize: none;
+        margin-bottom: 32px;
+        padding-top: 11px;
+        
+    }
+    .contact {
+        height: 42px;
+        margin-bottom: 16px;
+                    
+    }
+
+    .modal-form-check {
+        position: absolute;
+        appearance: none;
+      
+    }
+
+    .form-input {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 140%;
+        color: #131313;
+        padding-right: 12px;
+        padding-left: 12px;
+        width: 224px;
+        background: rgba(248, 210, 78, 0.1);
+        border: 1px solid #84A178;
+        border-radius: 10px;
+       
+        width: 368px;
+    }
+    .contact-form-header-submit {
+        background: #F8D24E;
+        border-radius: 10px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 15px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        color: #131313;
+        border: none;
+        width: 114px;
+        height: 42px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.contact-form-header-submit:hover {
+background: #0A8817;
+}
+
+.contact-form-header-submit:focus {
+    color: #FCFCFC;
+        background: #0A8817;
+}
+
+.modal-form-check:checked + .cream.text-order__order {
+    background: #aec6a5;
+}
+
+.modal-form-check:checked + .coffee.text-order__order {
+    background: #efd478;
+}
+
+.modal-form-check:checked + .milkshake.text-order__order {
+    background: #d6936d;
+}
